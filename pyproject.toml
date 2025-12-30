@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "attendance-system"
+version = "0.1.0"
+description = "Staff Attendance Record Management API"
+authors = ["陈逸楠 <ynchanhk@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.14"
+fastapi = "^0.104.1"
+uvicorn = {extras = ["standard"], version = "^0.24.0"}
+pydantic = {extras = ["email"], version = "^2.12.5"}
+python-dateutil = "^2.8.2"
+python-multipart = "^0.0.6"
+beanie = "^2.0.1"
+motor = "^3.7.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+black = "^23.0.0"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core>=1.5.0"]
+build-backend = "poetry.core.masonry.api"
