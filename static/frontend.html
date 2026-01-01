@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>员工考勤记录系统 - 完整前端</title>
+    <title>员工考勤记录系统</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Microsoft YaHei', Arial, sans-serif; background: linear-gradient(to bottom, #f0f2f5, #ffffff); padding: 20px; min-height: 100vh; }
@@ -43,7 +43,6 @@
             <table id="employeeTable" style="display:none;">
                 <thead>
                     <tr>
-                        <th>ID</th>
                         <th>编号</th>
                         <th>姓名</th>
                         <th>部门</th>
@@ -62,7 +61,7 @@
             <h2>创建新员工</h2>
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
                 <div>
-                    <label>员工编号（必须EMP001格式）：</label>
+                    <label>员工编号：</label>
                     <input type="text" id="code" placeholder="EMP001" value="EMP001" style="width:100%;">
                 </div>
                 <div>
@@ -100,18 +99,24 @@
         <!-- 出勤操作 -->
         <div class="section">
             <h2>出勤操作</h2>
-            <input type="number" id="checkEmployeeId" placeholder="员工ID">
-            <button onclick="checkIn()">签到</button>
+            <div style="margin-bottom: 15px;">
+                <label>员工编号：</label>
+                <input type="text" id="employeeCodeInput" placeholder="输入数字1,2,3...或EMP001" style="width:300px; padding:10px; font-size:16px;">
+            </div>
+            <div style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #ddd;">
+                <label>日期（标记缺勤）：</label>
+                <input type="date" id="absentDate" value="2025-12-30" style="padding:10px; margin-right:10px;">
+            </div>
+            <button onclick="checkIn()">出勤</button>
             <button onclick="checkOut()">签退</button>
-            <button onclick="markAbsent()">标记缺勤 (输入日期)</button>
-            <input type="date" id="absentDate" value="2025-12-30" style="display:none;">
+            <button onclick="markAbsent()">标记缺勤</button>
             <div id="attendanceStatus"></div>
         </div>
 
         <!-- 报告 -->
         <div class="section">
             <h2>报告</h2>
-            <input type="date" id="reportDate" value="2025-12-30">
+            <input type="date" id="reportDate">
             <button onclick="loadDailyReport()">查看日报</button>
             <button onclick="downloadMonthlyCSV()">下载月报 CSV (2025-12)</button>
             <div id="reportContent" class="report"></div>
@@ -147,6 +152,25 @@
 
     <script>
         const API = 'http://127.0.0.1:8000';
+        let employeeList = [];
+
+        // 转换数字或employee_code为标准格式
+        function convertToEmployeeCode(input) {
+            const trimmed = input.trim().toUpperCase();
+            
+            // 返回EMP
+            if (trimmed.startsWith('EMP')) {
+                return trimmed;
+            }
+            
+            // 转换为EMP格式
+            if (/^\d+$/.test(trimmed)) {
+                return 'EMP' + trimmed.padStart(3, '0');
+            }
+            
+            // 其他情况返回原值
+            return trimmed;
+        }  // 保存员工列表供出勤功能使用
 
         async function loadEmployees() {
             const status = document.getElementById('employeesStatus');
@@ -155,6 +179,7 @@
                 const res = await fetch(`${API}/employees/`);
                 if (!res.ok) throw new Error(res.status);
                 const data = await res.json();
+                employeeList = data;  // 保存到全局变量
                 status.innerHTML = '';
                 const tbody = document.getElementById('employeeBody');
                 tbody.innerHTML = '';
@@ -163,10 +188,20 @@
                     document.getElementById('employeeTable').style.display = 'none';
                     return;
                 }
+
+                // 不需要维护下拉菜单
+                // const select = document.getElementById('checkEmployeeSelect');
+                // select.innerHTML = '<option value="">-- 请选择员工 --</option>';
+                // data.forEach((emp, index) => {
+                //     const option = document.createElement('option');
+                //     option.value = emp.id;                          // value 还是 ObjectId（后端需要）
+                //     option.textContent = `${index + 1}. ${emp.employee_code} - ${emp.full_name} (${emp.department})`;
+                //     select.appendChild(option);
+                // });
+                
                 data.forEach(emp => {
                     const tr = tbody.insertRow();
                     tr.innerHTML = `
-                        <td>${emp.id}</td>
                         <td>${emp.employee_code}</td>
                         <td>${emp.full_name}</td>
                         <td>${emp.department}</td>
@@ -174,16 +209,18 @@
                         <td>${emp.hire_date}</td>
                         <td>${emp.is_deactivated ? '离职' : '在职'}</td>
                         <td>
-                            <button class="btn-small btn-danger" onclick="deactivateEmployee(${emp.id})">停用</button>
+                            <button class="btn-small btn-danger" onclick="deactivateEmployee('${emp._id}')">\u505c\u7528</button>
                         </td>
                     `;
                 });
                 document.getElementById('employeeTable').style.display = 'table';
             } catch (e) {
-                status.innerHTML = `<p class="error">加载失败：后端未运行</p>`;
+                status.innerHTML = e;
             }
         }
 
+        
+        // 不需要复杂的事件监听器
         async function createEmployee() {
             const data = {
                 employee_code: document.getElementById('code').value,
@@ -201,7 +238,7 @@
                 });
                 const result = await res.json();
                 if (res.ok) {
-                    document.getElementById('createStatus').innerHTML = `<p class="success">创建成功！ID: ${result.id}</p>`;
+                    document.getElementById('createStatus').innerHTML = `<p class="success">创建成功！ID: ${result._id}</p>`;
                     loadEmployees();
                 } else {
                     document.getElementById('createStatus').innerHTML = `<p class="error">失败：${JSON.stringify(result)}</p>`;
@@ -215,78 +252,186 @@
             if (!confirm('确定停用此员工？')) return;
             try {
                 const res = await fetch(`${API}/employees/${id}/deactivate`, {method: 'PATCH'});
+                const text = await res.text();
+                let result;
+                try {
+                    result = JSON.parse(text);
+                } catch (e) {
+                    result = {detail: text};
+                }
                 if (res.ok) {
                     alert('停用成功');
                     loadEmployees();
+                } else {
+                    alert('操作失败：' + (result.detail || text));
                 }
             } catch (e) {
-                alert('操作失败');
+                alert('操作失败：' + e.message);
             }
         }
 
+        // 不需要复杂的getEmployeeId函数
+
         async function checkIn() {
-            const id = document.getElementById('checkEmployeeId').value;
+            const input = document.getElementById('employeeCodeInput').value.trim();
+            if (!input) {
+                alert('请输入员工编号');
+                return;
+            }
+            
+            const code = convertToEmployeeCode(input);
+
             try {
                 const res = await fetch(`${API}/attendance/check-in`, {
                     method: 'POST',
                     headers: {'Content-Type': 'application/json'},
-                    body: JSON.stringify({employee_id: parseInt(id)})
+                    body: JSON.stringify({employee_code: code})
                 });
-                const result = await res.json();
-                document.getElementById('attendanceStatus').innerHTML = res.ok ? 
-                    `<p class="success">签到成功！状态: ${result.status}</p>` :
-                    `<p class="error">失败：${JSON.stringify(result)}</p>`;
+                
+                const text = await res.text();
+                let result = {};
+                try {
+                    result = JSON.parse(text);
+                } catch (e) {}
+                
+                if (res.ok) {
+                    alert('签到成功');
+                    document.getElementById('attendanceStatus').innerHTML = '<p class="success">签到成功</p>';
+                } else {
+                    const msg = result.detail || text;
+                    alert('签到失败: ' + msg);
+                }
             } catch (e) {
-                document.getElementById('attendanceStatus').innerHTML = '<p class="error">连接失败</p>';
+                alert('错误: ' + e.message);
             }
         }
 
         async function checkOut() {
-            const id = document.getElementById('checkEmployeeId').value;
+            const input = document.getElementById('employeeCodeInput').value.trim();
+            if (!input) {
+                alert('请输入员工编号(如EMP001或数字1,2,3..)');
+                return;
+            }
+            
+            const code = convertToEmployeeCode(input);
+            
             try {
                 const res = await fetch(`${API}/attendance/check-out`, {
                     method: 'PATCH',
                     headers: {'Content-Type': 'application/json'},
-                    body: JSON.stringify({employee_id: parseInt(id)})
+                    body: JSON.stringify({employee_code: code})
                 });
-                const result = await res.json();
-                document.getElementById('attendanceStatus').innerHTML = res.ok ? 
-                    `<p class="success">签退成功！工时: ${result.working_hours} 小时，状态: ${result.status}</p>` :
-                    `<p class="error">失败：${JSON.stringify(result)}</p>`;
+                
+                const text = await res.text();
+                let result = {};
+                try {
+                    result = JSON.parse(text);
+                } catch (e) {}
+                
+                if (res.ok) {
+                    const workHours = result.working_hours || 'N/A';
+                    alert('签退成功！工时: ' + workHours + ' 小时');
+                    document.getElementById('attendanceStatus').innerHTML = '<p class="success">签退成功！工时: ' + workHours + '小时</p>';
+                } else {
+                    const msg = result.detail || text;
+                    alert('签退失败: ' + msg);
+                }
             } catch (e) {
-                document.getElementById('attendanceStatus').innerHTML = '<p class="error">连接失败</p>';
+                alert('错误: ' + e.message);
             }
         }
 
         async function markAbsent() {
-            const id = document.getElementById('checkEmployeeId').value;
+            const input = document.getElementById('employeeCodeInput').value.trim();
+            if (!input) {
+                alert('请输入员工编号(如EMP001或数字1,2,3..)');
+                return;
+            }
+            
+            const code = convertToEmployeeCode(input);
+            
             const date = document.getElementById('absentDate').value;
+            if (!date) {
+                alert('请选择日期');
+                return;
+            }
+            
             try {
                 const res = await fetch(`${API}/attendance/mark-absent`, {
                     method: 'POST',
                     headers: {'Content-Type': 'application/json'},
-                    body: JSON.stringify({employee_id: parseInt(id), date: date})
+                    body: JSON.stringify({employee_code: code, date: date})
                 });
-                document.getElementById('attendanceStatus').innerHTML = res.ok ? 
-                    '<p class="success">标记缺勤成功</p>' :
-                    '<p class="error">失败</p>';
+                
+                const text = await res.text();
+                let result;
+                try {
+                    result = JSON.parse(text);
+                } catch (e) {
+                    result = {detail: text};
+                }
+                if (res.ok) {
+                    alert('标记缺勤成功');
+                    document.getElementById('attendanceStatus').innerHTML = '<p class="success">标记缺勤成功</p>';
+                } else {
+                    alert('标记缺勤失败：' + (result.detail || text));
+                    document.getElementById('attendanceStatus').innerHTML = `<p class="error">失败：${result.detail || text}</p>`;
+                }
             } catch (e) {
-                document.getElementById('attendanceStatus').innerHTML = '<p class="error">连接失败</p>';
+                console.error('markAbsent error:', e);
+                alert('连接失败：' + e.message);
+                document.getElementById('attendanceStatus').innerHTML = '<p class="error">连接失败：' + e.message + '</p>';
             }
         }
 
         async function loadDailyReport() {
             const date = document.getElementById('reportDate').value;
+            if (!date) {
+                document.getElementById('reportContent').innerHTML = '<p class="error">请选择日期</p>';
+                return;
+            }
+
             try {
                 const res = await fetch(`${API}/reports/daily-summary?report_date=${date}`);
+                if (!res.ok) {
+                    const text = await res.text();
+                    throw new Error(`HTTP ${res.status}: ${text}`);
+                }
                 const data = await res.json();
-                let html = `<h3>${data.date} 出勤报告</h3>
-                    <p>总人数: ${data.total_active} | 今日出勤: ${data.present} | 当前在岗: ${data.on_duty} | 缺勤: ${data.absent} | 迟到: ${data.late} | 请假: ${data.on_leave}</p>`;
-                if (data.absent_employees.length > 0) html += `<p><strong>缺勤名单：</strong>${data.absent_employees.join(', ')}</p>`;
-                if (data.late_employees.length > 0) html += `<p><strong>迟到名单：</strong>${data.late_employees.join(', ')}</p>`;
+
+                // 调试：看看后端到底返回了什么（打开 F12 Console 就能看到）
+                console.log('日报返回数据:', data);
+
+                let html = `<h3>${data.date || date} 出勤报告</h3>
+                    <p>总人数: ${data.total_active || 0} 
+                    | 出勤: ${data.present || 0} 
+                    | 在岗: ${data.on_duty || 0} 
+                    | 缺勤: ${data.absent || 0} 
+                    | 迟到: ${data.late || 0} 
+                    | 请假: ${data.on_leave || 0}</p>`;
+
+                // 安全渲染名单（防止 undefined）
+                const renderList = (key, label) => {
+                    if (data[key] && Array.isArray(data[key]) && data[key].length > 0) {
+                        html += `<p><strong>${label}：</strong>${data[key].join(', ')}</p>`;
+                    }
+                };
+
+                renderList('present_employees', '出勤名单');
+                renderList('absent_employees', '缺勤名单');
+                renderList('late_employees', '迟到名单');
+                renderList('on_leave_employees', '请假名单');
+
+                // 如果完全没有名单，至少提示一下
+                if (!data.present_employees && !data.absent_employees && !data.late_employees && !data.on_leave_employees) {
+                    html += '<p>今日无特殊记录（可能后端未返回名单字段）</p>';
+                }
+
                 document.getElementById('reportContent').innerHTML = `<div class="report">${html}</div>`;
             } catch (e) {
-                document.getElementById('reportContent').innerHTML = '<p class="error">报告加载失败</p>';
+                console.error('日报加载错误:', e);
+                document.getElementById('reportContent').innerHTML = 
+                    `<p class="error">报告加载失败：${e.message || '未知错误，请打开控制台查看详情'}</p>`;
             }
         }
 
@@ -340,7 +485,7 @@
                     const rate = r.attendance_rate !== undefined ? r.attendance_rate.toFixed(2) : 'N/A';
                     html += `<tr>
                         <td>${i+1}</td>
-                        <td>${r.employee_name || '未知'} (ID:${r.employee_id})</td>
+                        <td>${r.employee_name || '未知'} (${r.employee_code})</td>
                         <td>${rate}%</td>
                         <td>${r.late_count || 0}</td>
                     </tr>`;
@@ -357,7 +502,18 @@
         }
 
         // 页面加载自动刷新
-        loadEmployees();
+        function initPage() {
+            // 设置日期输入框为今天
+            const today = new Date();
+            const dateString = today.getFullYear() + '-' + 
+                              String(today.getMonth() + 1).padStart(2, '0') + '-' + 
+                              String(today.getDate()).padStart(2, '0');
+            document.getElementById('reportDate').value = dateString;
+            
+            loadEmployees();
+        }
+        
+        initPage();
     </script>
 </body>
 </html>

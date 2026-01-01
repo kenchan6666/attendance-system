@@ -4,6 +4,7 @@
 """
 import requests
 import json
+import random
 from datetime import date, datetime, timedelta
 
 BASE_URL = "http://127.0.0.1:8000"
@@ -19,12 +20,14 @@ def test_employees():
     print_section("1. 测试员工管理 API")
     
     # 创建员工
+    emp_code = f"E{random.randint(10000, 99999)}"[:6]
     emp_data = {
-        "name": "张三",
-        "employee_code": "EMP001",
+        "full_name": "张三",
+        "employee_code": emp_code,
         "email": "zhangsan@example.com",
         "department": "Sales",
-        "position": "Manager"
+        "position": "Manager",
+        "hire_date": date.today().isoformat()
     }
     resp = requests.post(f"{BASE_URL}/employees", json=emp_data, headers=HEADERS)
     print(f"POST /employees: {resp.status_code}")

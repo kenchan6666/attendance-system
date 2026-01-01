@@ -83,3 +83,497 @@
 2025-12-30 18:05:39 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0010s
 2025-12-30 18:05:41 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0010s
 2025-12-30 18:05:41 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0010s
+2025-12-31 10:31:07 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0020s
+2025-12-31 10:31:07 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0010s
+2025-12-31 10:31:07 - attendance_system.main - INFO - GET /favicon.ico | Status: 404 | Process Time: 0.0010s
+2025-12-31 10:31:11 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 10:31:14 - attendance_system.main - INFO - POST /employees/ | Status: 201 | Process Time: 0.0114s
+2025-12-31 10:31:14 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0020s
+2025-12-31 10:31:25 - attendance_system.main - INFO - POST /employees/ | Status: 201 | Process Time: 0.0020s
+2025-12-31 10:31:25 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0010s
+2025-12-31 11:01:37 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:01:37 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:01:37 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:02:04 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:02:11 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:03:01 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0020s
+2025-12-31 11:03:01 - attendance_system.main - INFO - POST /employees/ | Status: 201 | Process Time: 0.0070s
+2025-12-31 11:03:01 - attendance_system.main - INFO - POST /attendance/check-in | Status: 201 | Process Time: 0.0040s
+2025-12-31 11:03:01 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0010s
+2025-12-31 11:03:02 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:03:20 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:06:10 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:06:48 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:06:50 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:07:10 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:07:11 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:07:11 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:07:12 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:08:02 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:08:02 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:08:03 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:08:03 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:10:01 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:10:02 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:10:02 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:10:02 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:10:02 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:10:03 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:10:03 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:10:03 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:10:44 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:10:45 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:10:45 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:10:45 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:10:54 - attendance_system.main - INFO - POST /employees/ | Status: 201 | Process Time: 0.0079s
+2025-12-31 11:11:01 - attendance_system.main - INFO - POST /employees/ | Status: 409 | Process Time: 0.0020s
+2025-12-31 11:11:11 - attendance_system.main - INFO - POST /employees/ | Status: 201 | Process Time: 0.0030s
+2025-12-31 11:13:04 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:13:04 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:13:04 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:13:09 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:13:09 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:13:10 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:13:27 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:13:27 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:13:27 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:13:32 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:13:32 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:13:32 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:13:48 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0010s
+2025-12-31 11:13:48 - attendance_system.main - INFO - POST /employees/ | Status: 201 | Process Time: 0.0070s
+2025-12-31 11:13:48 - attendance_system.main - INFO - POST /attendance/check-in | Status: 201 | Process Time: 0.0030s
+2025-12-31 11:13:48 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0022s
+2025-12-31 11:14:35 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0020s
+2025-12-31 11:14:35 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0080s
+2025-12-31 11:14:47 - attendance_system.main - INFO - GET /reports/punctuality-ranking | Status: 200 | Process Time: 0.0118s
+2025-12-31 11:14:50 - attendance_system.main - INFO - GET /reports/department/IT/attendance | Status: 200 | Process Time: 0.0110s
+2025-12-31 11:14:57 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0070s
+2025-12-31 11:19:52 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:19:52 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:19:52 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:19:55 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0024s
+2025-12-31 11:19:55 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0025s
+2025-12-31 11:20:14 - attendance_system.main - INFO - POST /employees/ | Status: 201 | Process Time: 0.0040s
+2025-12-31 11:20:14 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0020s
+2025-12-31 11:20:32 - attendance_system.main - INFO - POST /attendance/check-in | Status: 400 | Process Time: 0.0020s
+2025-12-31 11:20:40 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0050s
+2025-12-31 11:20:50 - attendance_system.main - INFO - POST /employees/ | Status: 201 | Process Time: 0.0050s
+2025-12-31 11:20:50 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0015s
+2025-12-31 11:22:34 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:22:34 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:22:34 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:22:51 - attendance_system.main - INFO - GET /frontend.html | Status: 404 | Process Time: 0.0010s
+2025-12-31 11:23:00 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0010s
+2025-12-31 11:23:01 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0020s
+2025-12-31 11:24:02 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0029s
+2025-12-31 11:24:03 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 11:25:08 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0020s
+2025-12-31 11:25:08 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 11:25:30 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0053s
+2025-12-31 11:27:27 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:27:27 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:27:28 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:27:28 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:27:28 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:27:28 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:27:28 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:27:28 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:27:52 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0020s
+2025-12-31 11:27:52 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0080s
+2025-12-31 11:28:10 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:28:10 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:28:10 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:28:33 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:28:34 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:28:34 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:28:34 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:28:35 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:28:35 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:28:35 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:28:43 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0020s
+2025-12-31 11:28:44 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:28:45 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:28:45 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:28:45 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:28:45 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0060s
+2025-12-31 11:31:14 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:31:14 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:31:14 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:31:28 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:31:28 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:31:28 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:31:31 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0020s
+2025-12-31 11:31:32 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:31:32 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:31:32 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:31:32 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0070s
+2025-12-31 11:31:45 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0041s
+2025-12-31 11:31:45 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0025s
+2025-12-31 11:32:02 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:32:02 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:32:02 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:32:09 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0016s
+2025-12-31 11:32:09 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0020s
+2025-12-31 11:32:33 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:32:33 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:32:33 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:33:00 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:33:00 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:33:01 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:33:01 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:33:01 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:33:01 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:33:01 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:33:01 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:33:02 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:33:02 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:33:02 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:33:08 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0020s
+2025-12-31 11:33:09 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:33:10 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:33:10 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:33:10 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:33:10 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0060s
+2025-12-31 11:33:31 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0049s
+2025-12-31 11:33:43 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0045s
+2025-12-31 11:33:43 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0035s
+2025-12-31 11:34:43 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0020s
+2025-12-31 11:34:43 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0070s
+2025-12-31 11:35:39 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:35:39 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:35:39 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:35:42 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0010s
+2025-12-31 11:35:42 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0080s
+2025-12-31 11:35:51 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0070s
+2025-12-31 11:39:04 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0011s
+2025-12-31 11:39:04 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 11:40:50 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0016s
+2025-12-31 11:40:50 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0020s
+2025-12-31 11:42:13 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0016s
+2025-12-31 11:42:13 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 11:46:13 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:46:13 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:46:13 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:46:31 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0016s
+2025-12-31 11:46:31 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 11:46:37 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0043s
+2025-12-31 11:46:37 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 11:46:38 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0020s
+2025-12-31 11:46:38 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0040s
+2025-12-31 11:46:38 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0034s
+2025-12-31 11:46:38 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0050s
+2025-12-31 11:46:40 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0030s
+2025-12-31 11:46:40 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0050s
+2025-12-31 11:46:59 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:46:59 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:46:59 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:47:05 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0040s
+2025-12-31 11:47:05 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0090s
+2025-12-31 11:47:05 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0030s
+2025-12-31 11:47:05 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 11:47:11 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0048s
+2025-12-31 11:47:12 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0054s
+2025-12-31 11:47:29 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0020s
+2025-12-31 11:47:30 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 11:48:03 - attendance_system.main - INFO - POST /employees | Status: 307 | Process Time: 0.0010s
+2025-12-31 11:48:03 - attendance_system.main - INFO - POST /employees/ | Status: 422 | Process Time: 0.0010s
+2025-12-31 11:48:14 - attendance_system.main - INFO - POST /employees | Status: 307 | Process Time: 0.0000s
+2025-12-31 11:48:14 - attendance_system.main - INFO - POST /employees/ | Status: 409 | Process Time: 0.0020s
+2025-12-31 11:48:15 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:48:16 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:48:16 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:48:16 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:48:25 - attendance_system.main - INFO - POST /employees | Status: 307 | Process Time: 0.0000s
+2025-12-31 11:48:25 - attendance_system.main - INFO - POST /employees/ | Status: 422 | Process Time: 0.0040s
+2025-12-31 11:48:27 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:48:28 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:48:28 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:48:28 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:48:34 - attendance_system.main - INFO - POST /employees | Status: 307 | Process Time: 0.0010s
+2025-12-31 11:48:34 - attendance_system.main - INFO - POST /employees/ | Status: 422 | Process Time: 0.0040s
+2025-12-31 11:48:46 - attendance_system.main - INFO - POST /employees | Status: 307 | Process Time: 0.0007s
+2025-12-31 11:48:46 - attendance_system.main - INFO - POST /employees/ | Status: 422 | Process Time: 0.0005s
+2025-12-31 11:48:47 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:48:48 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:48:48 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:48:48 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:48:55 - attendance_system.main - INFO - POST /employees | Status: 307 | Process Time: 0.0000s
+2025-12-31 11:48:55 - attendance_system.main - INFO - POST /employees/ | Status: 422 | Process Time: 0.0030s
+2025-12-31 11:49:05 - attendance_system.main - INFO - POST /employees | Status: 307 | Process Time: 0.0010s
+2025-12-31 11:49:05 - attendance_system.main - INFO - POST /employees/ | Status: 201 | Process Time: 0.0050s
+2025-12-31 11:49:11 - attendance_system.main - INFO - POST /attendance/check-in | Status: 201 | Process Time: 0.0050s
+2025-12-31 11:49:39 - attendance_system.main - INFO - GET /employees | Status: 307 | Process Time: 0.0000s
+2025-12-31 11:49:39 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 11:49:39 - attendance_system.main - INFO - POST /attendance/check-in | Status: 201 | Process Time: 0.0040s
+2025-12-31 11:49:39 - attendance_system.main - INFO - PATCH /attendance/check-out | Status: 409 | Process Time: 0.0030s
+2025-12-31 11:49:40 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:49:41 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:49:41 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:49:41 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:49:46 - attendance_system.main - INFO - POST /employees | Status: 307 | Process Time: 0.0010s
+2025-12-31 11:49:46 - attendance_system.main - INFO - POST /employees/ | Status: 201 | Process Time: 0.0070s
+2025-12-31 11:49:48 - attendance_system.main - INFO - POST /attendance/check-in | Status: 201 | Process Time: 0.0050s
+2025-12-31 11:49:50 - attendance_system.main - INFO - PATCH /attendance/check-out | Status: 409 | Process Time: 0.0025s
+2025-12-31 11:50:14 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:50:15 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:50:16 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:50:16 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:50:16 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:50:18 - attendance_system.main - INFO - POST /employees | Status: 307 | Process Time: 0.0000s
+2025-12-31 11:50:18 - attendance_system.main - INFO - POST /employees/ | Status: 201 | Process Time: 0.0080s
+2025-12-31 11:50:20 - attendance_system.main - INFO - POST /attendance/check-in | Status: 201 | Process Time: 0.0060s
+2025-12-31 11:50:22 - attendance_system.main - INFO - PATCH /attendance/check-out | Status: 409 | Process Time: 0.0030s
+2025-12-31 11:50:30 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:50:30 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:50:30 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:50:48 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:50:48 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:50:48 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:51:23 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:51:23 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:51:23 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:52:00 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:52:00 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:52:00 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:52:22 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:52:22 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:52:22 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:53:08 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 11:53:08 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 11:53:08 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 11:53:09 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0010s
+2025-12-31 11:53:09 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0075s
+2025-12-31 11:53:13 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0020s
+2025-12-31 11:53:13 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0020s
+2025-12-31 11:54:44 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0010s
+2025-12-31 11:54:44 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0020s
+2025-12-31 11:54:44 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0010s
+2025-12-31 11:54:44 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 11:54:50 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0020s
+2025-12-31 11:54:50 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 11:59:00 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0040s
+2025-12-31 11:59:03 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0000s
+2025-12-31 11:59:03 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 11:59:23 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0011s
+2025-12-31 11:59:23 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 12:00:00 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 12:00:00 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 12:00:00 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 12:00:09 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0030s
+2025-12-31 12:00:09 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0090s
+2025-12-31 12:07:59 - attendance_system.main - INFO - GET /static/frontend.html | Status: 200 | Process Time: 0.0310s
+2025-12-31 12:08:00 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 12:08:01 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 12:14:02 - attendance_system.main - INFO - GET /static/frontend.html | Status: 200 | Process Time: 0.0020s
+2025-12-31 12:14:02 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 12:14:52 - attendance_system.main - INFO - GET /static/frontend.html | Status: 304 | Process Time: 0.0010s
+2025-12-31 12:14:52 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0020s
+2025-12-31 12:14:56 - attendance_system.main - INFO - GET /static/frontend.html | Status: 200 | Process Time: 0.0020s
+2025-12-31 12:14:56 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0020s
+2025-12-31 12:15:29 - attendance_system.main - INFO - GET /static/frontend.html | Status: 304 | Process Time: 0.0020s
+2025-12-31 12:15:29 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 12:15:33 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 12:16:09 - attendance_system.main - INFO - GET /static/frontend.html | Status: 304 | Process Time: 0.0010s
+2025-12-31 12:16:09 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0020s
+2025-12-31 12:16:09 - attendance_system.main - INFO - GET /static/frontend.html | Status: 304 | Process Time: 0.0010s
+2025-12-31 12:16:09 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0040s
+2025-12-31 12:16:10 - attendance_system.main - INFO - GET /static/frontend.html | Status: 304 | Process Time: 0.0010s
+2025-12-31 12:16:10 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0031s
+2025-12-31 12:16:12 - attendance_system.main - INFO - GET /static/frontend.html | Status: 200 | Process Time: 0.0010s
+2025-12-31 12:16:13 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 12:23:02 - attendance_system.main - INFO - GET /static/frontend.html | Status: 200 | Process Time: 0.0020s
+2025-12-31 12:23:02 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0040s
+2025-12-31 12:26:23 - attendance_system.main - INFO - GET /static/frontend.html | Status: 200 | Process Time: 0.0020s
+2025-12-31 12:26:23 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 12:26:24 - attendance_system.main - INFO - GET /static/frontend.html | Status: 304 | Process Time: 0.0020s
+2025-12-31 12:26:24 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 12:33:31 - attendance_system.main - INFO - GET /static/frontend.html | Status: 200 | Process Time: 0.0030s
+2025-12-31 12:33:31 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0040s
+2025-12-31 12:33:32 - attendance_system.main - INFO - GET /static/frontend.html | Status: 304 | Process Time: 0.0041s
+2025-12-31 12:33:32 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 12:36:50 - attendance_system.main - INFO - GET /static/frontend.html | Status: 200 | Process Time: 0.0020s
+2025-12-31 12:36:50 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 12:37:10 - attendance_system.main - INFO - POST /employees/ | Status: 409 | Process Time: 0.0030s
+2025-12-31 12:37:19 - attendance_system.main - INFO - POST /employees/ | Status: 409 | Process Time: 0.0040s
+2025-12-31 12:37:30 - attendance_system.main - INFO - POST /employees/ | Status: 201 | Process Time: 0.0060s
+2025-12-31 12:37:30 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0020s
+2025-12-31 12:40:58 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 12:40:58 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 12:40:58 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 12:41:50 - attendance_system.main - INFO - GET /static/frontend.html | Status: 200 | Process Time: 0.0310s
+2025-12-31 12:41:51 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0080s
+2025-12-31 12:41:53 - attendance_system.main - INFO - GET /static/frontend.html | Status: 304 | Process Time: 0.0010s
+2025-12-31 12:41:53 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0035s
+2025-12-31 13:08:56 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 13:08:56 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 13:08:56 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 13:12:56 - attendance_system.main - INFO - GET /static/frontend.html | Status: 200 | Process Time: 0.0335s
+2025-12-31 13:12:56 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0074s
+2025-12-31 13:13:00 - attendance_system.main - INFO - GET /static/frontend.html | Status: 304 | Process Time: 0.0010s
+2025-12-31 13:13:00 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0050s
+2025-12-31 13:13:09 - attendance_system.main - INFO - POST /employees/ | Status: 201 | Process Time: 0.0070s
+2025-12-31 13:13:09 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0040s
+2025-12-31 13:13:23 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0070s
+2025-12-31 13:19:39 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 13:19:40 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 13:19:40 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 13:25:15 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 13:25:15 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 13:25:15 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 13:25:18 - attendance_system.main - INFO - GET /static/frontend.html | Status: 200 | Process Time: 0.0335s
+2025-12-31 13:25:18 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0080s
+2025-12-31 13:27:27 - attendance_system.main - INFO - GET /static/frontend.html | Status: 200 | Process Time: 0.0022s
+2025-12-31 13:27:28 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 13:27:32 - attendance_system.main - INFO - GET /static/frontend.html | Status: 200 | Process Time: 0.0010s
+2025-12-31 13:27:32 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 13:27:45 - attendance_system.main - INFO - GET /static/frontend.html | Status: 200 | Process Time: 0.0030s
+2025-12-31 13:27:46 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0020s
+2025-12-31 13:27:49 - attendance_system.main - INFO - POST /attendance/check-in | Status: 201 | Process Time: 0.0050s
+2025-12-31 13:27:51 - attendance_system.main - INFO - POST /attendance/mark-absent | Status: 201 | Process Time: 0.0100s
+2025-12-31 13:27:54 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0060s
+2025-12-31 13:28:06 - attendance_system.main - INFO - POST /attendance/check-in | Status: 201 | Process Time: 0.0075s
+2025-12-31 13:28:09 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0080s
+2025-12-31 13:28:13 - attendance_system.main - INFO - GET /static/frontend.html | Status: 304 | Process Time: 0.0020s
+2025-12-31 13:28:14 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0040s
+2025-12-31 13:28:16 - attendance_system.main - INFO - GET /reports/department/IT/attendance | Status: 200 | Process Time: 0.0180s
+2025-12-31 13:28:17 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0050s
+2025-12-31 13:28:20 - attendance_system.main - INFO - POST /attendance/check-in | Status: 404 | Process Time: 0.0040s
+2025-12-31 13:28:29 - attendance_system.main - INFO - POST /attendance/check-in | Status: 201 | Process Time: 0.0093s
+2025-12-31 13:28:33 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0080s
+2025-12-31 13:28:40 - attendance_system.main - INFO - GET /reports/department/IT/attendance | Status: 200 | Process Time: 0.0232s
+2025-12-31 13:28:44 - attendance_system.main - INFO - GET /reports/punctuality-ranking | Status: 200 | Process Time: 0.0210s
+2025-12-31 13:29:03 - attendance_system.main - INFO - POST /employees/ | Status: 201 | Process Time: 0.0060s
+2025-12-31 13:29:03 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0040s
+2025-12-31 13:29:07 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0085s
+2025-12-31 13:29:12 - attendance_system.main - INFO - POST /attendance/check-in | Status: 201 | Process Time: 0.0093s
+2025-12-31 13:29:14 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0075s
+2025-12-31 13:29:16 - attendance_system.main - INFO - GET /static/frontend.html | Status: 304 | Process Time: 0.0020s
+2025-12-31 13:29:16 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0060s
+2025-12-31 13:29:17 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0070s
+2025-12-31 13:30:14 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 13:30:14 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 13:30:14 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 13:30:52 - attendance_system.main - INFO - GET /static/frontend.html | Status: 200 | Process Time: 0.0355s
+2025-12-31 13:30:52 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0075s
+2025-12-31 13:30:53 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0039s
+2025-12-31 13:30:57 - attendance_system.main - INFO - GET /static/frontend.html | Status: 304 | Process Time: 0.0040s
+2025-12-31 13:30:57 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 13:30:58 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0050s
+2025-12-31 13:31:01 - attendance_system.main - INFO - POST /attendance/check-in | Status: 201 | Process Time: 0.0085s
+2025-12-31 13:31:04 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0081s
+2025-12-31 13:31:06 - attendance_system.main - INFO - GET /reports/department/IT/attendance | Status: 200 | Process Time: 0.0249s
+2025-12-31 13:31:10 - attendance_system.main - INFO - GET /reports/punctuality-ranking | Status: 200 | Process Time: 0.0228s
+2025-12-31 13:31:15 - attendance_system.main - INFO - POST /attendance/check-in | Status: 201 | Process Time: 0.0063s
+2025-12-31 13:31:17 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0045s
+2025-12-31 13:31:22 - attendance_system.main - INFO - GET /static/frontend.html | Status: 304 | Process Time: 0.0029s
+2025-12-31 13:31:22 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 13:31:23 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0065s
+2025-12-31 13:31:43 - attendance_system.main - INFO - POST /attendance/mark-absent | Status: 201 | Process Time: 0.0040s
+2025-12-31 13:31:45 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0040s
+2025-12-31 13:33:16 - attendance_system.main - INFO - GET /static/frontend.html | Status: 304 | Process Time: 0.0020s
+2025-12-31 13:33:16 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 13:33:18 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 13:33:19 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 13:33:19 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 13:33:19 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 13:33:19 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0080s
+2025-12-31 13:33:19 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0035s
+2025-12-31 13:33:24 - attendance_system.main - INFO - POST /attendance/check-in | Status: 201 | Process Time: 0.0085s
+2025-12-31 13:33:26 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0074s
+2025-12-31 13:36:51 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2025-12-31 13:36:51 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2025-12-31 13:36:51 - attendance_system.main - INFO - Beanie initialized successfully!
+2025-12-31 13:36:53 - attendance_system.main - INFO - GET /static/frontend.html | Status: 200 | Process Time: 0.0487s
+2025-12-31 13:36:53 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0075s
+2025-12-31 13:37:02 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0080s
+2025-12-31 14:12:54 - attendance_system.main - INFO - GET /reports/department/IT/attendance | Status: 200 | Process Time: 0.0265s
+2025-12-31 14:13:11 - attendance_system.main - INFO - POST /employees/ | Status: 409 | Process Time: 0.0027s
+2025-12-31 14:13:18 - attendance_system.main - INFO - GET /static/frontend.html | Status: 304 | Process Time: 0.0036s
+2025-12-31 14:13:18 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0020s
+2025-12-31 14:13:26 - attendance_system.main - INFO - POST /employees/ | Status: 409 | Process Time: 0.0042s
+2025-12-31 14:13:32 - attendance_system.main - INFO - POST /employees/ | Status: 409 | Process Time: 0.0040s
+2025-12-31 14:13:42 - attendance_system.main - INFO - GET /static/frontend.html | Status: 304 | Process Time: 0.0020s
+2025-12-31 14:13:42 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0060s
+2025-12-31 14:13:48 - attendance_system.main - INFO - PATCH /employees/695490b9aebe9f167327c986/deactivate | Status: 200 | Process Time: 0.0119s
+2025-12-31 14:13:49 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0045s
+2025-12-31 14:13:51 - attendance_system.main - INFO - PATCH /employees/6954926537d525d3986ea4ab/deactivate | Status: 200 | Process Time: 0.0060s
+2025-12-31 14:13:52 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0038s
+2025-12-31 14:13:55 - attendance_system.main - INFO - PATCH /employees/6954943ef89cce8a6dcbfb1c/deactivate | Status: 200 | Process Time: 0.0067s
+2025-12-31 14:13:55 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 14:13:57 - attendance_system.main - INFO - PATCH /employees/6954944ff89cce8a6dcbfb1d/deactivate | Status: 200 | Process Time: 0.0069s
+2025-12-31 14:13:57 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0048s
+2025-12-31 14:13:59 - attendance_system.main - INFO - PATCH /employees/695494ec3053f961b7d50f3f/deactivate | Status: 200 | Process Time: 0.0073s
+2025-12-31 14:14:00 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0032s
+2025-12-31 14:14:05 - attendance_system.main - INFO - PATCH /employees/69549d7a71aa99a1cd6b7a18/deactivate | Status: 200 | Process Time: 0.0060s
+2025-12-31 14:14:05 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0032s
+2025-12-31 14:14:19 - attendance_system.main - INFO - POST /employees/ | Status: 201 | Process Time: 0.0082s
+2025-12-31 14:14:19 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0050s
+2025-12-31 14:14:27 - attendance_system.main - INFO - POST /attendance/check-in | Status: 201 | Process Time: 0.0093s
+2025-12-31 14:14:29 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0067s
+2025-12-31 14:14:42 - attendance_system.main - INFO - PATCH /attendance/check-out | Status: 404 | Process Time: 0.0030s
+2025-12-31 14:14:50 - attendance_system.main - INFO - PATCH /attendance/check-out | Status: 409 | Process Time: 0.0075s
+2025-12-31 14:14:58 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0061s
+2025-12-31 14:15:08 - attendance_system.main - INFO - PATCH /attendance/check-out | Status: 404 | Process Time: 0.0020s
+2025-12-31 14:15:16 - attendance_system.main - INFO - PATCH /attendance/check-out | Status: 409 | Process Time: 0.0050s
+2025-12-31 14:15:22 - attendance_system.main - INFO - POST /attendance/check-in | Status: 201 | Process Time: 0.0060s
+2025-12-31 14:15:26 - attendance_system.main - INFO - GET /static/frontend.html | Status: 304 | Process Time: 0.0033s
+2025-12-31 14:15:27 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 14:15:28 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0062s
+2025-12-31 14:15:49 - attendance_system.main - INFO - PATCH /attendance/check-out | Status: 409 | Process Time: 0.0070s
+2025-12-31 14:15:54 - attendance_system.main - INFO - PATCH /attendance/check-out | Status: 409 | Process Time: 0.0060s
+2025-12-31 14:35:41 - attendance_system.main - INFO - GET /static/frontend.html | Status: 304 | Process Time: 0.0010s
+2025-12-31 14:35:41 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 14:35:54 - attendance_system.main - INFO - POST /attendance/mark-absent | Status: 201 | Process Time: 0.0073s
+2025-12-31 14:35:56 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0065s
+2025-12-31 14:36:11 - attendance_system.main - INFO - POST /attendance/mark-absent | Status: 201 | Process Time: 0.0060s
+2025-12-31 14:36:15 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0082s
+2025-12-31 14:36:15 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0070s
+2025-12-31 14:36:37 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0060s
+2025-12-31 14:36:45 - attendance_system.main - INFO - POST /attendance/mark-absent | Status: 201 | Process Time: 0.0073s
+2025-12-31 14:36:55 - attendance_system.main - INFO - POST /attendance/check-in | Status: 201 | Process Time: 0.0087s
+2025-12-31 14:36:58 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0067s
+2025-12-31 14:37:52 - attendance_system.main - INFO - GET /static/frontend.html | Status: 304 | Process Time: 0.0010s
+2025-12-31 14:37:52 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 14:37:54 - attendance_system.main - INFO - GET /static/frontend.html | Status: 304 | Process Time: 0.0010s
+2025-12-31 14:37:54 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 14:37:54 - attendance_system.main - INFO - GET /static/frontend.html | Status: 304 | Process Time: 0.0017s
+2025-12-31 14:37:54 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0020s
+2025-12-31 14:37:58 - attendance_system.main - INFO - GET /static/frontend.html | Status: 200 | Process Time: 0.0020s
+2025-12-31 14:37:58 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0020s
+2025-12-31 14:37:59 - attendance_system.main - INFO - GET /static/frontend.html | Status: 304 | Process Time: 0.0010s
+2025-12-31 14:37:59 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 14:37:59 - attendance_system.main - INFO - GET /static/frontend.html | Status: 304 | Process Time: 0.0010s
+2025-12-31 14:37:59 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0035s
+2025-12-31 14:38:00 - attendance_system.main - INFO - GET /static/frontend.html | Status: 304 | Process Time: 0.0009s
+2025-12-31 14:38:00 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 14:38:07 - attendance_system.main - INFO - GET /static/frontend.html | Status: 200 | Process Time: 0.0010s
+2025-12-31 14:38:08 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 14:38:10 - attendance_system.main - INFO - GET /static/frontend.html | Status: 304 | Process Time: 0.0010s
+2025-12-31 14:38:10 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 14:38:19 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0020s
+2025-12-31 14:38:20 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0044s
+2025-12-31 14:38:24 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0020s
+2025-12-31 14:38:24 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0040s
+2025-12-31 14:39:17 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0000s
+2025-12-31 14:39:17 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 14:39:20 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0016s
+2025-12-31 14:39:20 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 14:39:25 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0040s
+2025-12-31 14:39:25 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 14:39:47 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0010s
+2025-12-31 14:39:47 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 14:39:50 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0010s
+2025-12-31 14:39:50 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 14:39:53 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0036s
+2025-12-31 14:39:53 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 14:40:00 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0040s
+2025-12-31 14:40:00 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 14:40:06 - attendance_system.main - INFO - GET /reports/punctuality-ranking | Status: 200 | Process Time: 0.0105s
+2025-12-31 14:40:09 - attendance_system.main - INFO - GET /reports/department/IT/attendance | Status: 200 | Process Time: 0.0090s
+2025-12-31 15:13:26 - attendance_system.main - INFO - GET / | Status: 200 | Process Time: 0.0010s
+2025-12-31 15:13:27 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0030s
+2025-12-31 15:13:30 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0040s
+2025-12-31 15:14:27 - attendance_system.main - INFO - GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Process Time: 0.0020s
+2025-12-31 15:14:38 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0042s
+2025-12-31 15:14:42 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0075s
