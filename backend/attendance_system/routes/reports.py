@@ -192,7 +192,6 @@ async def get_department_attendance(
     date_from: Optional[str] = Query(None),
     date_to: Optional[str] = Query(None)
 ):
-    """获取部门统计：员工总数、平均出勤率、迟到总数、缺勤总数"""
     # 解析日期
     if date_from:
         start_date = datetime.strptime(date_from, "%Y-%m-%d").date()
@@ -204,7 +203,7 @@ async def get_department_attendance(
     else:
         end_date = date.today()
     
-    # 获取该部门活跃员工
+    # 获取该部门员工
     dept_employees = await Employee.find(Employee.department == department, Employee.is_deactivated == False).to_list()
 
     if not dept_employees:
@@ -223,7 +222,7 @@ async def get_department_attendance(
             {"date": {"$gte": start_date, "$lte": end_date}}
         ).to_list()
         
-        # 计算该员工出勤率
+        # 计算出勤率
         working_days = 0
         present_days = 0
         
@@ -266,7 +265,6 @@ async def get_punctuality_ranking(
     date_to: Optional[str] = Query(None),
     limit: int = Query(10)
 ):
-    """获取准时排名：按出勤率降序、迟到次数升序，返回前 limit 名"""
     # 解析日期
     if date_from:
         start_date = datetime.strptime(date_from, "%Y-%m-%d").date()
@@ -352,7 +350,7 @@ async def get_punctuality_ranking(
             "working_days": working_days
         })
     
-    # 排序：出勤率降序、迟到升序
+    # 出勤率降序、迟到升序
     rankings.sort(key=lambda x: (-x["attendance_rate"], x["late_count"]))
     
     return {

@@ -1,6 +1,3 @@
-"""
-日志配置模块
-"""
 import logging
 import logging.config
 
@@ -48,7 +45,7 @@ def setup_logging():
     try:
         logging.config.dictConfig(LOGGING_CONFIG)
     except Exception as e:
-        # 日志目录不存在时的备用方案
+        # 备用方案
         import os
         os.makedirs("logs", exist_ok=True)
         logging.config.dictConfig(LOGGING_CONFIG)
