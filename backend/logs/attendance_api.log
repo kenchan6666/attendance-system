@@ -1113,3 +1113,20 @@
 2026-01-02 17:47:15 - attendance_system.main - INFO - Beanie initialized successfully!
 2026-01-02 17:47:28 - attendance_system.main - INFO - GET / | Status: 304 | Process Time: 0.0535s
 2026-01-02 17:47:28 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0085s
+2026-01-02 17:54:56 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2026-01-02 17:54:56 - attendance_system.main - INFO - Frontend build path: C:\Users\³ÂÒÝéª\.vscode\attendance_system\frontend\build
+2026-01-02 17:54:56 - attendance_system.main - INFO - Frontend build path exists: True
+2026-01-02 17:54:56 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2026-01-02 17:54:56 - attendance_system.main - INFO - Beanie initialized successfully!
+2026-01-02 17:55:01 - attendance_system.main - INFO - GET / | Status: 304 | Process Time: 0.0050s
+2026-01-02 17:55:01 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0038s
+2026-01-02 19:23:23 - attendance_system.main - INFO - Using MongoDB URL from env or default (not showing credentials)
+2026-01-02 19:23:23 - attendance_system.main - INFO - Frontend build path: C:\Users\³ÂÒÝéª\.vscode\attendance_system\frontend\build
+2026-01-02 19:23:23 - attendance_system.main - INFO - Frontend build path exists: True
+2026-01-02 19:23:24 - attendance_system.main - INFO - Connected to MongoDB successfully!
+2026-01-02 19:23:24 - attendance_system.main - INFO - Beanie initialized successfully!
+2026-01-02 19:23:32 - attendance_system.main - INFO - GET / | Status: 304 | Process Time: 0.1475s
+2026-01-02 19:23:33 - attendance_system.main - INFO - GET /employees/ | Status: 200 | Process Time: 0.0369s
+2026-01-02 19:23:33 - attendance_system.main - INFO - GET /favicon.ico | Status: 404 | Process Time: 0.0070s
+2026-01-02 19:23:46 - attendance_system.main - INFO - GET /reports/daily-summary | Status: 200 | Process Time: 0.0611s
+2026-01-02 19:23:52 - attendance_system.main - INFO - GET /reports/punctuality-ranking | Status: 200 | Process Time: 0.0696s
